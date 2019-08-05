@@ -15,16 +15,16 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxDarknet
+	ADDON_NAME = ofxYoloSolo
 	ADDON_DESCRIPTION = Addon for darknet neural network framework
-	ADDON_AUTHOR = Marcel Schwittlick
-	ADDON_TAGS = "machine learning" "deep learning" "neural networks"
-	ADDON_URL = https://github.com/mrzl/ofxDarknet
+	ADDON_AUTHOR = Vincent Rebers
+	ADDON_TAGS = "object detection" "neural networks"
+	ADDON_URL = https://github.com/saynono/ofxYoloSolo
 
 common:
 	# dependencies with other addons, a list of them separated by spaces 
 	# or use += in several lines
-	ADDON_DEPENDENCIES = ofxOpenCv
+# 	ADDON_DEPENDENCIES = ofxOpenCv
 	
 	# include search paths, this will be usually parsed from the file system
 	# but if the addon or addon libraries need special search paths they can be
@@ -81,7 +81,7 @@ vs:
 	ADDON_INCLUDES += libs/3rdparty/include
 
 linux64:
-# 	ADDON_LIBS += libs/darknet/lib/linux64/libdarknet.so
+	ADDON_LIBS += libs/darknet/lib/linux64/libdarknet.so
 	ADDON_INCLUDES += /usr/local/cuda/include
 	ADDON_SOURCES_EXCLUDE = libs/3rdparty/include/pthread.h
 	ADDON_SOURCES_EXCLUDE += libs/3rdparty/include/sched.h

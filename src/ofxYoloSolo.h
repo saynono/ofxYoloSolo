@@ -10,8 +10,8 @@
 
 #include "ofMain.h"
 
-#include "ofxCv.h"
-#include "ofxOpenCv.h"
+// #include "ofxCv.h"
+// #include "ofxOpenCv.h"
 
 #include "yolo_v2_class.hpp"    // imported functions from DLL
 
