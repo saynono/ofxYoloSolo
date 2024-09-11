@@ -1,3 +1,2 @@
-ofxDarknet
 ofxOpenCv
-ofxCv
+ofxYoloSolo

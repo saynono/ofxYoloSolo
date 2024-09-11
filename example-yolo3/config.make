@@ -8,7 +8,7 @@
 #   The location of your root openFrameworks installation
 #       (default) OF_ROOT = ../../.. 
 ################################################################################
-# OF_ROOT = ../../..
+OF_ROOT = ../../..
 
 ################################################################################
 # PROJECT ROOT
@@ -70,12 +70,13 @@
 #		(default) PROJECT_LDFLAGS = -Wl,-rpath=./libs
 #
 #   Note: Leave a leading space when adding list items with the += operator
-#
+################################################################################
+
 # Currently, shared libraries that are needed are copied to the 
 # $(PROJECT_ROOT)/bin/libs directory.  The following LDFLAGS tell the linker to
 # add a runtime path to search for those shared libraries, since they aren't 
 # incorporated directly into the final executable application binary.
-################################################################################
+# TODO: should this be a default setting?
 # PROJECT_LDFLAGS=-Wl,-rpath=./libs
 
 ################################################################################
@@ -139,3 +140,7 @@
 ################################################################################
 # PROJECT_CXX = 
 # PROJECT_CC = 
+
+# Uncomment/comment below to switch between C++11 and C++17 ( or newer ). On macOS C++17 needs 10.15 or above.
+export MAC_OS_MIN_VERSION = 10.15
+export MAC_OS_CPP_VER = -std=c++17
